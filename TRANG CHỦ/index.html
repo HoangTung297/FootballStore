@@ -6,26 +6,78 @@
     <title>Shop Quần Áo Bóng Đá - Đồng Phục Câu Lạc Bộ</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>FOOTBALL<span>STORE</span></h1>
-            <p>Đồng phục bóng đá chính hãng</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#products">Sản phẩm</a></li>
-                <li><a href="#clubs">Câu lạc bộ</a></li>
-                <li><a href="#national">Đội tuyển</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </nav>
-        <div class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="cart-count">0</span>
+        <div class="header-container">
+            <div class="logo">
+                <h1>FOOTBALL<span>STORE</span></h1>
+                <p>Đồng phục bóng đá chính hãng</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="#products">Sản phẩm <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-column">
+                                <h4>Quần áo</h4>
+                                <ul>
+                                    <li><a href="#">Premier League</a></li>
+                                    <li><a href="#">La Liga</a></li>
+                                    <li><a href="#">Serie A</a></li>
+                                    <li><a href="#">Bundesliga</a></li>
+                                    <li><a href="#">Ligue 1</a></li>
+                                    <li><a href="#">V-League</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Giày</h4>
+                                <ul>
+                                    <li><a href="#">Nike</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Puma</a></li>
+                                    <li><a href="#">Mizuno</a></li>
+                                    <li><a href="#">New Balance</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Bóng</h4>
+                                <ul>
+                                    <li><a href="#">Bóng thi đấu</a></li>
+                                    <li><a href="#">Bóng tập</a></li>
+                                    <li><a href="#">Bóng trẻ em</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Phụ kiện</h4>
+                                <ul>
+                                    <li><a href="#">Găng tay</a></li>
+                                    <li><a href="#">Tất bóng đá</a></li>
+                                    <li><a href="#">Bọc ống đồng</a></li>
+                                    <li><a href="#">Balo thể thao</a></li>
+                                    <li><a href="#">Mũ lưỡi trai</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="user-actions">
+                    <a href="#"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -38,13 +90,8 @@
     </section>
 
     <section id="products" class="products">
-        <div class="section-header">
-        <h2 class="section-title">SẢN PHẨM NỔI BẬT</h2>
-        <div class="carousel-nav">
-            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
-            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
-        </div>
-        </div>
+       <h2 class="section-title">SẢN PHẨM NỔI BẬT</h2>
+        
         <div class="product-grid">
             <!-- Sản phẩm 1 -->
             <div class="product-card">
@@ -99,7 +146,7 @@
             </div>
             <div class="product-card">
                 <img src="./image/áo/var.jpg" alt="Áo Varsity Off-White AC Milan">
-                <h3>Áo  Varsity Off-White AC Milan</h3>
+                <h3>Áo Varsity Off-White AC Milan</h3>
                 <p class="price">599,000₫</p>
                 <button class="add-to-cart">Thêm vào giỏ</button>
             </div>
@@ -135,6 +182,8 @@
             <div class="category-card">
                 <img src="./image/logo tournament/vl.jpg" alt="V-League">
                 <h3>V-League</h3>
+            </div>
+        </div>
     </section>
 
     <section id="national" class="category-section">
@@ -165,6 +214,35 @@
                 <h3>Đức</h3>
             </div>
         </div>
+        <div class="view-more">
+            <button class="btn-view-more">Xem thêm sản phẩm <i class="fas fa-arrow-down"></i></button>
+        </div>
+    </section>
+
+    <section id="consulting" class="consulting">
+        <h2 class="section-title">TƯ VẤN CHUYÊN NGHIỆP</h2>
+        <div class="consulting-container">
+            <div class="consulting-item">
+                <i class="fas fa-tshirt"></i>
+                <h3>Tư vấn đồng phục</h3>
+                <p>Chọn lựa đồng phục phù hợp với đội bóng của bạn</p>
+            </div>
+            <div class="consulting-item">
+                <i class="fas fa-shoe-prints"></i>
+                <h3>Tư vấn giày</h3>
+                <p>Giày bóng đá phù hợp với sân thi đấu và phong cách</p>
+            </div>
+            <div class="consulting-item">
+                <i class="fas fa-futbol"></i>
+                <h3>Tư vấn bóng</h3>
+                <p>Chọn bóng phù hợp với từng giải đấu và lứa tuổi</p>
+            </div>
+            <div class="consulting-item">
+                <i class="fas fa-tools"></i>
+                <h3>Tư vấn phụ kiện</h3>
+                <p>Phụ kiện bóng đá chính hãng, chất lượng cao</p>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="contact">
@@ -172,9 +250,11 @@
         <div class="contact-container">
             <div class="contact-info">
                 <h3>Thông tin liên hệ</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 55 Giải Phóng,Hai Bà Trưng,Hà Nội</p>
-                <p><i class="fas fa-phone"></i> 0123 456 789</p>
-                <p><i class="fas fa-envelope"></i> info@seasarstore.com</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> 55 Giải Phóng, Hai Bà Trưng, Hà Nội</p>
+                    <p><i class="fas fa-phone"></i> 0123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@footballstore.com</p>
+                </div>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/seasar.store/about"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/seasarstore/"><i class="fab fa-instagram"></i></a>
@@ -183,10 +263,18 @@
             </div>
             <div class="contact-form">
                 <form>
-                    <input type="text" placeholder="Họ và tên" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Số điện thoại">
-                    <textarea placeholder="Nội dung liên hệ" required></textarea>
+                    <div class="form-group">
+                        <input type="text" placeholder="Họ và tên" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Số điện thoại">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Nội dung liên hệ" required></textarea>
+                    </div>
                     <button type="submit" class="btn">GỬI LIÊN HỆ</button>
                 </form>
             </div>
@@ -204,8 +292,8 @@
                 <ul>
                     <li><a href="#">Trang chủ</a></li>
                     <li><a href="#products">Sản phẩm</a></li>
-                    <li><a href="#clubs">Câu lạc bộ</a></li>
-                    <li><a href="#national">Đội tuyển</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -218,8 +306,69 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 SEASARSTORE. All Rights Reserved.</p>
+            <p>&copy; 2025 FOOTBALLSTORE. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Dropdown menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('mouseenter', function() {
+                    this.querySelector('.dropdown-menu').style.display = 'block';
+                });
+                
+                dropdown.addEventListener('mouseleave', function() {
+                    this.querySelector('.dropdown-menu').style.display = 'none';
+                });
+            });
+
+            // Add to cart functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartCount = document.querySelector('.cart-count');
+            let count = 0;
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    count++;
+                    cartCount.textContent = count;
+                    cartCount.classList.add('pulse');
+                    
+                    setTimeout(() => {
+                        cartCount.classList.remove('pulse');
+                    }, 300);
+                });
+            });
+        });
+
+            // QUAN TRỌNG: Ngăn chặn sự kiện touch ngang
+            document.addEventListener('touchmove', function(e) {
+                if (e.touches.length > 1) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
+
+            // Ngăn chặn zoom bằng pinch
+            document.addEventListener('gesturestart', function(e) {
+                e.preventDefault();
+            });
+        ;
+
+        // QUAN TRỌNG: Ngăn chặn scroll ngang bằng JavaScript
+        window.addEventListener('scroll', function() {
+            if (window.scrollX !== 0) {
+                window.scrollTo(0, window.scrollY);
+            }
+        });
+
+        // Ngăn chặn sự kiện wheel ngang
+        window.addEventListener('wheel', function(e) {
+            if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+    </script>
 </body>
 </html>
