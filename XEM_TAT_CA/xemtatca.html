@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Quần Áo Bóng Đá - Đồng Phục Câu Lạc Bộ</title>
+    <link rel="stylesheet" href="style_xemtatca.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>FOOTBALL<span>STORE</span></h1>
+                <p>Đồng phục bóng đá chính hãng</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../TRANG_CHU/index.html">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="../XEM_TAT_CA/xemtatca.html" class="active">Sản phẩm <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-column">
+                                <h4>Quần áo</h4>
+                                <ul>
+                                    <li><a href="#">Premier League</a></li>
+                                    <li><a href="#">La Liga</a></li>
+                                    <li><a href="#">Serie A</a></li>
+                                    <li><a href="#">Bundesliga</a></li>
+                                    <li><a href="#">Ligue 1</a></li>
+                                    <li><a href="#">V-League</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Giày</h4>
+                                <ul>
+                                    <li><a href="#">Nike</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Puma</a></li>
+                                    <li><a href="#">Mizuno</a></li>
+                                    <li><a href="#">New Balance</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Bóng</h4>
+                                <ul>
+                                    <li><a href="#">Bóng thi đấu</a></li>
+                                    <li><a href="#">Bóng tập</a></li>
+                                    <li><a href="#">Bóng trẻ em</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Phụ kiện</h4>
+                                <ul>
+                                    <li><a href="#">Găng tay</a></li>
+                                    <li><a href="#">Tất bóng đá</a></li>
+                                    <li><a href="#">Bọc ống đồng</a></li>
+                                    <li><a href="#">Balo thể thao</a></li>
+                                    <li><a href="#">Mũ lưỡi trai</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../GIOI_THIEU/gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="../LIEN_HE/lienhe.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="user-actions">
+                    <a href="#"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+  <main class="container">
+    <!-- Sidebar bộ lọc -->
+    <aside class="filter-sidebar">
+      <h3>Bộ lọc sản phẩm</h3>
+
+      <div class="filter-group">
+        <strong>Giá</strong><br>
+        <label><input type="checkbox" name="price" value="duoi500"> Dưới 500.000₫</label>
+        <label><input type="checkbox" name="price" value="500-600"> 500.000₫ - 600.000₫</label>
+        <label><input type="checkbox" name="price" value="tren600"> Trên 600.000₫</label>
+      </div>
+
+      <div class="filter-group">
+        <strong>Loại sản phẩm</strong><br>
+        <label><input type="checkbox" name="category" value="ao"> Áo đấu</label>
+        <label><input type="checkbox" name="category" value="giay"> Giày</label>
+        <label><input type="checkbox" name="category" value="phukien"> Phụ kiện</label>
+      </div>
+
+      <div class="filter-group">
+        <strong>Thương hiệu / CLB</strong><br>
+        <label><input type="checkbox" name="brand" value="manutd"> Manchester United</label>
+        <label><input type="checkbox" name="brand" value="real"> Real Madrid</label>
+        <label><input type="checkbox" name="brand" value="barca"> Barcelona</label>
+      </div>
+
+      
+    </aside>
+    
+    <!-- Danh sách sản phẩm -->
+    <div class="product-grid">
+
+    <!-- Sản phẩm 1 -->
+    <div class="product-card" 
+         data-price="499000" 
+         data-category="ao" 
+         data-brand="manutd">
+        <div class="image-holder">
+            <img src="./image/áo/aomu.jpg" alt="Áo Manchester United 2023">
+        </div>
+        <h3>Áo Manchester United 2023-24</h3>
+        <p class="price">499,000₫</p>
+        <button class="add-to-cart">Thêm vào giỏ</button>
+    </div>
+
+    <!-- Sản phẩm 2 -->
+    <div class="product-card" 
+         data-price="499000" 
+         data-category="ao" 
+         data-brand="real">
+        <div class="image-holder">
+            <img src="./image/áo/real.jpg" alt="Áo Real Madrid 2023">
+        </div>
+        <h3>Áo Real Madrid 2023-24</h3>
+        <p class="price">499,000₫</p>
+        <button class="add-to-cart">Thêm vào giỏ</button>
+    </div>
+
+    <!-- Sản phẩm 3 -->
+    <div class="product-card" 
+         data-price="499000" 
+         data-category="ao" 
+         data-brand="barca">
+        <div class="image-holder">
+            <img src="./image/áo/aobarca.jpg" alt="Áo Barcelona 2023">
+        </div>
+        <h3>Áo Barcelona 2023-24</h3>
+        <p class="price">499,000₫</p>
+        <button class="add-to-cart">Thêm vào giỏ</button>
+    </div>
+
+    <!-- Sản phẩm 4 -->
+    <div class="product-card" 
+         data-price="499000" 
+         data-category="ao" 
+         data-brand="argen">
+        <div class="image-holder">
+            <img src="./image/áo/argen.webp" alt="Áo ĐTQG Argentina 2023">
+        </div>
+        <h3>Áo ĐTQG Argentina 2023</h3>
+        <p class="price">499,000₫</p>
+        <button class="add-to-cart">Thêm vào giỏ</button>
+    </div>
+
+    <!-- Sản phẩm 5 -->
+    <div class="product-card" 
+         data-price="499000" 
+         data-category="phukien" 
+         data-brand="none">
+        <div class="image-holder">
+            <img src="./image/linh kiện/bóng c1.jpg" alt="Quả bóng C1 năm 2020">
+        </div>
+        <h3>Quả bóng C1 năm 2020</h3>
+        <p class="price">499,000₫</p>
+        <button class="add-to-cart">Thêm vào giỏ</button>
+    </div>
+
+    <!-- Sản phẩm 6 -->
+    <div class="product-card" 
+         data-price="549000" 
+         data-category="giay" 
+         data-brand="adidas">
+        <div class="image-holder">
+            <img src="./image/linh kiện/giày adidas f50.webp" alt="Giày Adidas F50">
+        </div>
+        <h3>Giày Adidas F50</h3>
+        <p class="price">549,000₫</p>
+        <button class="add-to-cart">Thêm vào giỏ</button>
+    </div>
+
+    <!-- Sản phẩm 7 -->
+    <div class="product-card" 
+         data-price="599000" 
+         data-category="giay" 
+         data-brand="nike">
+        <div class="image-holder">
+            <img src="./image/linh kiện/giày mercurial vapor 16.webp" alt="Giày Nike Mercurial Vapor 16">
+        </div>
+        <h3>Giày Nike Mercurial Vapor 16</h3>
+        <p class="price">599,000₫</p>
+        <button class="add-to-cart">Thêm vào giỏ</button>
+    </div>
+
+    <!-- Sản phẩm 8 -->
+    <div class="product-card" 
+         data-price="599000" 
+         data-category="ao" 
+         data-brand="milan">
+        <div class="image-holder">
+            <img src="./image/áo/var.jpg" alt="Áo Varsity Off-White AC Milan">
+        </div>
+        <h3>Áo Varsity Off-White AC Milan</h3>
+        <p class="price">599,000₫</p>
+        <button class="add-to-cart">Thêm vào giỏ</button>
+    </div>
+  </div>
+
+
+  </main>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Thông tin liên hệ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 55 Giải Phóng,Hai Bà Trưng,Hà Nội</p>
+                <p><i class="fas fa-phone"></i> 0123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@seasarstore.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/seasar.store/about"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/seasarstore/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://shopee.vn/seasarstore11?entryPoint=ShopBySearch&searchKeyword=seasar%20store"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Họ và tên" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Số điện thoại">
+                    <textarea placeholder="Nội dung liên hệ" required></textarea>
+                    <button type="submit" class="btn">GỬI LIÊN HỆ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>VỀ CHÚNG TÔI</h3>
+                <p>Chuyên cung cấp đồng phục bóng đá chính hãng, chất lượng cao với giá cả hợp lý.</p>
+            </div>
+            <div class="footer-section">
+                <h3>LIÊN KẾT NHANH</h3>
+                <ul>
+                    <li><a href="../TRANG_CHU/index.html">Trang chủ</a></li>
+                    <li><a href="../XEM_TAT_CA/xemtatca.html" class="active">Sản phẩm</a></li>
+                    <li><a href="../GIOI_THIEU/gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="../LIEN_HE/lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>HỖ TRỢ</h3>
+                <ul>
+                    <li><a href="../LIEN_HE/lienhe.html#return-policy-section ">Chính sách đổi trả</a></li>
+                    <li><a href="../LIEN_HE/lienhe.html#shopping-guide-section">Hướng dẫn mua hàng</a></li>
+                    <li><a href="../LIEN_HE/lienhe.html#faq-section">Câu hỏi thường gặp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FOOTBALLSTORE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dropdown menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('mouseenter', function() {
+                    this.querySelector('.dropdown-menu').style.display = 'block';
+                });
+                
+                dropdown.addEventListener('mouseleave', function() {
+                    this.querySelector('.dropdown-menu').style.display = 'none';
+                });
+            });
+
+            // Add to cart functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartCount = document.querySelector('.cart-count');
+            let count = 0;
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    count++;
+                    cartCount.textContent = count;
+                    cartCount.classList.add('pulse');
+                    
+                    setTimeout(() => {
+                        cartCount.classList.remove('pulse');
+                    }, 300);
+                });
+            });
+        });
+
+            // QUAN TRỌNG: Ngăn chặn sự kiện touch ngang
+            document.addEventListener('touchmove', function(e) {
+                if (e.touches.length > 1) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
+
+            // Ngăn chặn zoom bằng pinch
+            document.addEventListener('gesturestart', function(e) {
+                e.preventDefault();
+            });
+        ;
+
+        // QUAN TRỌNG: Ngăn chặn scroll ngang bằng JavaScript
+        window.addEventListener('scroll', function() {
+            if (window.scrollX !== 0) {
+                window.scrollTo(0, window.scrollY);
+            }
+        });
+
+        // Ngăn chặn sự kiện wheel ngang
+        window.addEventListener('wheel', function(e) {
+            if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+    </script>
+
+  <!-- JS lọc sản phẩm -->
+  <script>
+function filterProducts() {
+    const checkedPrices = [...document.querySelectorAll('input[name="price"]:checked')].map(el => el.value);
+    const checkedCategories = [...document.querySelectorAll('input[name="category"]:checked')].map(el => el.value);
+    const checkedBrands = [...document.querySelectorAll('input[name="brand"]:checked')].map(el => el.value);
+
+    const products = document.querySelectorAll('.product-card');
+
+    products.forEach(product => {
+        const price = parseInt(product.dataset.price);
+        const category = product.dataset.category;
+        const brand = product.dataset.brand;
+
+        let visible = true;
+
+        // ===== LỌC THEO GIÁ =====
+        if (checkedPrices.length > 0) {
+            visible = checkedPrices.some(range => {
+                if (range === "duoi500") return price < 500000;
+                if (range === "500-600") return price >= 500000 && price <= 600000;
+                if (range === "tren600") return price > 600000;
+            });
+        }
+
+        // ===== LỌC THEO LOẠI =====
+        if (visible && checkedCategories.length > 0) {
+            visible = checkedCategories.includes(category);
+        }
+
+        // ===== LỌC THEO THƯƠNG HIỆU =====
+        if (visible && checkedBrands.length > 0) {
+            visible = checkedBrands.includes(brand);
+        }
+
+        // ẨN / HIỆN SẢN PHẨM
+        product.style.display = visible ? "flex" : "none";
+    });
+}
+
+// Tự động lọc khi tick checkbox
+document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    cb.addEventListener("change", filterProducts);
+});
+
+// Lọc lúc khởi động
+filterProducts();
+</script>
+
+
+</body>
+</html>
