@@ -34,6 +34,10 @@ body {
     width: 100vw;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Header Styles */
 header {
     background: linear-gradient(135deg, var(--primary-color), #283593);
@@ -422,6 +426,7 @@ header {
 .view-more {
     text-align: center;
     width: 100%;
+    text-decoration: none;
 }
 
 .btn-view-more {
@@ -433,6 +438,7 @@ header {
     cursor: pointer;
     transition: var(--transition);
     font-weight: bold;
+    text-decoration: none;
 }
 
 .btn-view-more:hover {
